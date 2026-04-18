@@ -8,6 +8,21 @@
 {% seo %}
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
     {% include head-custom.html %}
+	<style>
+		a {
+		  color: #4169e1;
+		  text-decoration: underline;
+		  text-underline-offset: 5px;
+		  text-decoration-thickness: 1px;
+
+		  &:hover {
+			text-decoration-thickness: 3px;
+		  }
+		  &:active {
+			color: #e14e41;
+		  }
+		}
+	</style>
   </head>
   <body>
     <div class="container-lg px-3 my-5 markdown-body">
